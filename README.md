@@ -25,9 +25,10 @@ On macos, you can easily install all dependencies using brew.
 
 ## Configuration
 Please edit file `env.sh` according to your system configuration:
-- set CAS_API_KEY variable ot the value you've got from CAS service
 - set ASSET variable to the full path of your asset to notarize
+- uncomment and set CAS_API_KEY.
 
+You can also set `CAS_API_KEY=api_key_value` in a separate `cas_key` file
 
 ## Docker
 
@@ -38,5 +39,5 @@ docker build -t casshow:latest .
 
 To run it:
 ```sh
-docker run -it --rm cas:latest
+docker run -it --rm cas:latest -e CAS_API_KEY=api_key_value
 ```

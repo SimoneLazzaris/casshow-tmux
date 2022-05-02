@@ -12,7 +12,10 @@
 # limitations under the License.
 
 source env.sh
-rm -rf data
+if [ -z "$CAS_API_KEY" ]
+then
+echo "You must set CAS_API_KEY to run"
+fi
 
 session="casshow"
 tmux has-session -t $session 2>/dev/null
