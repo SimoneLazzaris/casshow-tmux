@@ -10,7 +10,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if command -v nnn &> /dev/null
+if command -v nnn > /dev/null
 then
     nnn
 else
