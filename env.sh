@@ -16,6 +16,7 @@
 # Uncomment and configure CAS api key, or set it in "cas_key" file
 # export CAS_API_KEY=XXXX
 export ASSET=./immudb
+export CAS=./cas
 if [ -f cas_key ]
 then
 source cas_key

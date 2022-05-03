@@ -34,22 +34,22 @@ exec 3>&-
 
 case $R in
 "login")
-  tmux selectp -t 2 \; send-keys C-m C-m "./cas login" C-m 
+  tmux selectp -t 2 \; send-keys C-m C-m "$CAS login" C-m 
   ;;
 "notarize")
-  tmux selectp -t 2 \; send-keys C-m C-m "./cas notarize $ASSET" C-m 
+  tmux selectp -t 2 \; send-keys C-m C-m "$CAS notarize $ASSET" C-m 
   ;;
 "authene")
-  tmux selectp -t 2 \; send-keys C-m C-m "./cas authenticate $ASSET" C-m 
+  tmux selectp -t 2 \; send-keys C-m C-m "$CAS authenticate $ASSET" C-m 
   ;;
 "inspect")
-  tmux selectp -t 2 \; send-keys C-m C-m "./cas inspect $ASSET" C-m 
+  tmux selectp -t 2 \; send-keys C-m C-m "$CAS inspect $ASSET" C-m 
   ;;
 "untrust")
-  tmux selectp -t 2 \; send-keys C-m C-m "./cas untrust $ASSET" C-m 
+  tmux selectp -t 2 \; send-keys C-m C-m "$CAS untrust $ASSET" C-m 
   ;;
 "trust")
-  tmux selectp -t 2 \; send-keys C-m C-m "./cas unsupport $ASSET" C-m 
+  tmux selectp -t 2 \; send-keys C-m C-m "$CAS unsupport $ASSET" C-m 
   ;;
 "quit")
   tmux selectp -t 2 \; send-keys C-c   
